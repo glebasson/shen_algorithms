@@ -1,0 +1,6 @@
+# ignore make and cmake products
+*
+!.gitignore
+!*.cpp
+!*.h
+!CMakeLists.txt
