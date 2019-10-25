@@ -5,6 +5,8 @@
 #include <vector>
 #include <iterator> 
 
+// Problem: cover n segments with min points
+
 using Segment = std::pair<int, int>;
 
 std::vector<int> get_covering_set(std::vector<Segment> segments) {

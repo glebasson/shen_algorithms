@@ -6,6 +6,10 @@
 #include <iterator> 
 #include <iomanip>
 
+// Problem: just casual continius backpack problem
+// input max W, c_i, w_i
+// maximaize sum c_i * wi_i, with respect of sum w_i <= W
+
 using P = std::pair<int,double>;
 
 double maximize_backpack(std::vector<P> v, int &maxweight) {

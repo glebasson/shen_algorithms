@@ -1,6 +1,10 @@
 #include <iostream>
 #include <vector>
 
+// Problem: find sum of different numbers
+// input 1≤n≤10**9
+// find max k, where sum_0^k(a_i) = n, a_i are natural.
+
 int main() {
 	int n;
 	std::cin >> n;
