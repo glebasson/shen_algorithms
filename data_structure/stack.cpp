@@ -41,6 +41,7 @@ int main() {
 	int count = 0;
 	char c;
 	while (std::cin >> c) {
+		count++;
 		if (c == '[' || c == '{' || c == '(') {
 			st.push(c);
 			st.head->num = count;
