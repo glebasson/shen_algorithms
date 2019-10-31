@@ -1,5 +1,6 @@
 #include <iostream>
 
+// implementation of stack and solved problem of brackets
 template <typename T>
 struct node {
 	T value;
@@ -40,12 +41,11 @@ int main() {
 	int count = 0;
 	char c;
 	while (std::cin >> c) {
-		count++;
 		if (c == '[' || c == '{' || c == '(') {
 			st.push(c);
 			st.head->num = count;
 		}
-		else {
+		else if (c == ']' || c == '}' || c == ')') {
 			if (st.head == NULL){
 				std::cout << count << std::endl;
 				return(0);
@@ -62,6 +62,9 @@ int main() {
 		}
 	}
 	if (st.size()) {
+		while(st.size() > 1) {
+			st.pop();
+		}
 		std::cout << st.head->num << std::endl;
 		return(0);
 	}
