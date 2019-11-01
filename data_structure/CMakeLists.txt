@@ -1,1 +1,2 @@
 add_executable(stack stack.cpp)
+add_executable(list list.cpp)
