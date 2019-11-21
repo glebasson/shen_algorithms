@@ -1,8 +1,5 @@
 # ignore make and cmake products
-*
-!.gitignore
-!*.cpp
-!*.h
-!CMakeLists.txt
-
-!*/
+Makefile
+CMakeFiles
+CMakeCache.txt
+cmake_install.cmake
