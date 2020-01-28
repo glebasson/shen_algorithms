@@ -1,3 +1,7 @@
+/** 
+	This implementation of hash table works slow because
+	new take too long time in c++ (one el memory allocation)
+*/
 #include <algorithm>
 #include <iostream>
 #include <string>
