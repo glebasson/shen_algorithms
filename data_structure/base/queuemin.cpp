@@ -27,7 +27,11 @@ struct minstack {
 	}
 
 	void pop() {
-		if(head != nullptr) head = head->prev;
+		if(head != nullptr) {
+			el *tmp = head;
+			head = head->prev;
+			delete head;
+		}
 	}
 };
 
