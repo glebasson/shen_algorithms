@@ -17,12 +17,11 @@ int main(int argc, char const* argv[]) {
     }
     char buf[BUF_SIZE];
     ssize_t num_bytes = 1;
-    while (num_bytes) {
+    while ((num_bytes = read(fd, buf, 255)) > 0) {
         if (num_bytes == -1) {
             perror("read");
             return errno;
         }
-        num_bytes = read(fd, buf, 255);
         if (write(STDOUT_FILENO, buf, num_bytes) == -1) {
             perror("write to stdout");
             break;
