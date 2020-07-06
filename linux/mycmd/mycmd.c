@@ -33,7 +33,8 @@ int main(int argc, char const* argv[]) {
         if(pid == 0) {
             runProgram(buf);
         } else {
-            wait(&status);
+            pid = wait(&status);
+            printf("%i just exit with status %i\n", pid, status);
         }
     }
 }
