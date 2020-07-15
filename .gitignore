@@ -1,5 +1,4 @@
 # ignore make and cmake products
-Makefile
 CMakeFiles
 CMakeCache.txt
 cmake_install.cmake
